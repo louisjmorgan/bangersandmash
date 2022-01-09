@@ -17,7 +17,6 @@ import ChilloutDonk from '../assets/music/performance.jpg';
 const MusicText = () => {
   return (
     <StyledMusicText>
-      <h2>Music</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque dictum posuere turpis nec rutrum. Praesent lacinia
@@ -65,7 +64,7 @@ const Music = () => {
   ];
   return (
     <StyledHomeContainer>
-      <Gallery images={images} />
+      <Gallery images={images} title="Music" />
       <MusicText />
       <SoundcloudPreview />
     </StyledHomeContainer>

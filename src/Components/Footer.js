@@ -35,7 +35,7 @@ const Footer = () => {
           <img src={Twitter} alt="twitter" />
         </a>
       </StyledFooterSocials> */}
-      <NavLink to="/contact" className="footer-cta">
+      <NavLink to="/tickets" className="footer-cta">
         Sign up now!
       </NavLink>
     </StyledFooterContainer>

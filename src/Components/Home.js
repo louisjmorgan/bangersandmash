@@ -89,7 +89,7 @@ const Home = () => {
   return (
     <main>
       <StyledHomeContainer>
-        <Gallery images={images} />
+        <Gallery images={images} title="Bangers & Mash Festival" />
         <LandingText />
         <HomeLinks />
       </StyledHomeContainer>

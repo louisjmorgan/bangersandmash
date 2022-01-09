@@ -1,6 +1,12 @@
 import React from 'react';
 import { StyledTicketText, StyledTicketForm } from './Tickets.styled';
 import { StyledHomeContainer } from './Home.styled';
+import Gallery from './Gallery';
+import CampingFields from '../assets/info/camping_fields.jpg';
+import IntoWoods from '../assets/info/into_the_woods.jpg';
+import SunriseFire from '../assets/info/sunrise_fire.jpg';
+import CastleVigil from '../assets/info/castle_vigil.jpg';
+import CampingWoods from '../assets/info/woodland_camping.jpg';
 
 const TicketForm = () => {
   return (
@@ -33,9 +39,32 @@ const TicketText = () => {
 };
 
 const Tickets = () => {
+  const images = [
+    {
+      url: CampingFields,
+      alt: 'camping fields',
+    },
+    {
+      url: IntoWoods,
+      alt: 'wedding in woods',
+    },
+    {
+      url: SunriseFire,
+      alt: 'sunrise fire',
+    },
+    {
+      url: CastleVigil,
+      alt: 'candlelight vigil at castle',
+    },
+    {
+      url: CampingWoods,
+      alt: 'woodland camping',
+    },
+  ];
   return (
     <main>
       <StyledHomeContainer>
+        <Gallery images={images} title="Tickets" />
         <TicketText />
         <TicketForm />
       </StyledHomeContainer>

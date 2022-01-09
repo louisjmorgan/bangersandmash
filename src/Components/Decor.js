@@ -12,7 +12,6 @@ import NightGlade from '../assets/decor/nighttime_glade_1.jpg';
 const DecorText = () => {
   return (
     <StyledDecorText>
-      <h2>Decor & Installations</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque dictum posuere turpis nec rutrum. Praesent lacinia
@@ -52,7 +51,7 @@ const Decor = () => {
   ];
   return (
     <StyledHomeContainer>
-      <Gallery images={images} />
+      <Gallery images={images} title="Decor & Installations" />
       <DecorText />
     </StyledHomeContainer>
   );

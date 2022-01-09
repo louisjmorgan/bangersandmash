@@ -4,7 +4,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import StyledGallery from './Gallery.styled';
 
-const SimpleSlider = ({ images }) => {
+const SimpleSlider = ({ images, title }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,22 +15,23 @@ const SimpleSlider = ({ images }) => {
   };
   const galleryContent = images.map((image) => {
     return (
-      <div>
+      <div className="gradient-overlay">
         <img src={image.url} alt={image.alt} />
       </div>
     );
   });
   return (
     <div>
+      <span>{title}</span>
       <Slider {...settings}>{galleryContent}</Slider>
     </div>
   );
 };
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, title }) => {
   return (
     <StyledGallery>
-      <SimpleSlider images={images} />
+      <SimpleSlider images={images} title={title} />
     </StyledGallery>
   );
 };

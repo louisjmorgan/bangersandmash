@@ -12,7 +12,6 @@ import CampingWoods from '../assets/info/woodland_camping.jpg';
 const FoodText = () => {
   return (
     <StyledInfoText>
-      <h2>Other Info</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque dictum posuere turpis nec rutrum. Praesent lacinia
@@ -27,7 +26,7 @@ const FoodText = () => {
   );
 };
 
-const Food = () => {
+const Info = () => {
   const images = [
     {
       url: CampingFields,
@@ -52,10 +51,10 @@ const Food = () => {
   ];
   return (
     <StyledHomeContainer>
-      <Gallery images={images} />
+      <Gallery images={images} title="More info" />
       <FoodText />
     </StyledHomeContainer>
   );
 };
 
-export default Food;
+export default Info;

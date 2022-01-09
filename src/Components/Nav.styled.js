@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const StyledNavContainer = styled.nav`
-  background-color: white;
+  background-color: none;
   top: 0;
   width: 100vw;
-  position: relative;
+  position: absolute;
+  top: 0%;
   overflow-x: hidden;
 
   z-index: 99999;
@@ -16,7 +17,7 @@ const StyledNavContainer = styled.nav`
 
 /* Holds navlinks and social media buttons */
 const StyledNavBar = styled.div`
-  margin-top: 2rem;
+  margin-top: 0rem;
   position: fixed;
   width: 100%;
   max-height: 100vh;
@@ -31,17 +32,16 @@ const StyledNavBar = styled.div`
   }
 
   @media only screen and (min-width: 1200px) {
-    position: relative;
+    position: fixed;
     left: 0;
     height: auto;
   }
 
   .navbar {
-    margin-top: 6.75rem;
-    display: flex;
     background-color: white;
+    margin-top: 0;
+    display: flex;
     position: relative;
-
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
@@ -50,11 +50,11 @@ const StyledNavBar = styled.div`
     align-items: start;
     overflow-y: auto;
     overflow-x: hidden;
-
     @media only screen and (min-width: 1200px) {
-      margin-top: 0;
+      background: none;
       flex-direction: row;
-      align-items: baseline;
+      align-items: center;
+      color: var(--color-bg);
     }
   }
 
@@ -76,61 +76,68 @@ const StyledNavBar = styled.div`
 `;
 
 const StyledNavLinks = styled.ul`
-  padding: 5rem 3rem;
-    display: flex;
-    flex-direction: column;
+  padding: 10rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 40rem;
+  height: 60%;
+  width: auto;
+  align-items: start;
+
+  @media only screen and (min-width: 1200px) {
+    padding: 4rem 2rem 1rem;
+    display: block;
+    min-height: 0;
+    flex-direction: row;
     justify-content: space-between;
-    min-height: 40rem;
-    height: 60%;
-    width: auto;
-    align-items: start;
+    flex-grow: 1;
+    width: 100%;
+    order: 0;
+  }
 
+  li {
+    padding: 0 1.5rem;
+    display: inline-block;
+  }
+
+  li :not(.selected):after {
+    margin-top: 0.75rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 0px;
+    transition: 0.3s;
+  }
+
+  li :not(.selected):hover:after,
+  .selected:after {
+    position: relative;
+    display: block;
+    margin-top: 0.75rem;
+    width: 100%;
+    height: 0.25rem;
+    content: '';
+    background-color: var(--color-text);
+    cursor: pointer;
     @media only screen and (min-width: 1200px) {
-      padding: 5rem 2rem 1rem;
-      display: block;
-      min-height: 0;
-      margin-left: 1.5rem;
-      flex-grow: 1;
-      width: 50%;
-      order: 0;
+      background-color: var(--color-bg);
     }
+    
+  }
 
-    li {
-      padding: 0 1.5rem;
-      display: inline-block;
+  a {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
+    @media only screen and (min-width: 1200px) {
+      color: inherit;
+      font-size: 1.5rem;
     }
-
-    li :not(.selected):after {
-      margin-top: 0.75rem;
-      content: '';
-      display: block;
-      height: 0.25rem;
-      width: 0px;
-      transition: 0.3s;
-    }
-
-    li :not(.selected):hover:after,
-    .selected:after {
-      position: relative;
-      display: block;
-      margin-top: 0.75rem;
-      width: 100%;
-      height: 0.25rem;
-      content: '';
-      background-color: var(--color-text);
-      cursor: pointer;
-    }
-
-    a {
-      color: var(--color-text);
-      font-family: var(--font-primary);
-      text-decoration: none;
-      font-size: 1.75rem;
-      font-weight: 400;
-      @media only screen and (min-width: 1200px) {
-        font-size: 1.25rem;
-      }
-    }
+  }
   }
 `;
 
@@ -167,7 +174,7 @@ const StyledMobileNav = styled.div`
   display: flex;
   position: fixed;
   padding: 1rem 0;
-  background-color: white;
+  background-color: none;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -216,6 +223,10 @@ const StyledHamburger = styled.button`
     height: 0.25em;
     margin: 0.5em auto;
     transition: all 0.3s ease-in-out;
+    background-color: var(--color-bg);
+  }
+
+  &.active .bar {
     background-color: var(--color-text);
   }
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import NightTime from '../assets/home/nighttime_panorama.jpg';
 
 const StyledHomeContainer = styled.div`
-  margin-top: 10rem;
+  margin-top: 0rem;
   @media only screen and (min-width: 1200px) {
     margin-top: 0rem;
   }

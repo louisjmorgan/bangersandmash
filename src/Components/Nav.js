@@ -1,7 +1,8 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-return-assign */
 /* eslint-disable react/prop-types */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 // import BangersLogo from '../assets/mikeloganaudio.jpg';
 // import Soundcloud from '../assets/soundcloud.png';
@@ -120,23 +121,44 @@ const NavLinksContainer = ({ closeMenu }) => {
   );
 };
 
-const NavBar = ({ isMenuOpen, closeMenu }) => {
+// className={() => {
+//   if (isMenuOpen && scrolled) {
+//     return `active navbar-scroll`;
+//   }
+//   if (isMenuOpen && !scrolled) {
+//     return `active`;
+//   }
+//   if (!isMenuOpen && scrolled) {
+//     return `navbar-scroll`;
+//   }
+//   if (!isMenuOpen && scrolled) {
+//     return '';
+//   }
+
+const NavBar = ({ isMenuOpen, closeMenu, scrolled }) => {
   return (
-    <StyledNavBar className={`${isMenuOpen ? 'active' : ''}`}>
-      <div className="navbar">
+    <StyledNavBar
+      className={`${isMenuOpen ? 'active' : ''}`}
+      style={{
+        backgroundColor: scrolled
+          ? 'var(--color-bg)'
+          : 'rgba(0,0,0,0)',
+      }}
+    >
+      <div className={scrolled ? 'navbar navbar-scroll' : 'navbar'}>
         <NavLinksContainer closeMenu={closeMenu} />
-        <NavLink exact to="/" className="logo">
-          {/* <img src={BangersLogo} alt="Mike Logan Audio Logo" /> */}
-        </NavLink>
+        {/* <NavLink exact to="/" className="logo">
+           <img src={BangersLogo} alt="Mike Logan Audio Logo" /> 
+        </NavLink> */}
         {/* <NavSocialButtons /> */}
       </div>
     </StyledNavBar>
   );
 };
 
-const MobileNav = ({ isMenuOpen, toggleMenu }) => {
+const MobileNav = ({ isMenuOpen, toggleMenu, scrolled }) => {
   return (
-    <StyledMobileNav>
+    <StyledMobileNav className={scrolled ? 'navbar-scroll' : ''}>
       <StyledHamburger
         type="button"
         onClick={toggleMenu}
@@ -157,7 +179,21 @@ const MobileNav = ({ isMenuOpen, toggleMenu }) => {
 
 const Nav = () => {
   const [isMenuOpen, setMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+  const changeBackground = () => {
+    if (window.scrollY >= 77) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener('scroll', changeBackground);
+  });
   const toggleMenu = () => {
     setMenu((prevState) => !prevState);
   };
@@ -168,8 +204,16 @@ const Nav = () => {
 
   return (
     <StyledNavContainer>
-      <NavBar isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
-      <MobileNav isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <NavBar
+        isMenuOpen={isMenuOpen}
+        closeMenu={closeMenu}
+        scrolled={scrolled}
+      />
+      <MobileNav
+        isMenuOpen={isMenuOpen}
+        toggleMenu={toggleMenu}
+        scrolled={scrolled}
+      />
     </StyledNavContainer>
   );
 };

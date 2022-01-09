@@ -30,7 +30,7 @@ const StyledTicketText = styled.div`
 
 const StyledTicketForm = styled.form`
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 `;
 
 export { StyledTicketText, StyledTicketForm };

@@ -11,7 +11,6 @@ import VeganDelights from '../assets/food/vegan_delights.jpg';
 const FoodText = () => {
   return (
     <StyledFoodText>
-      <h2>Food</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque dictum posuere turpis nec rutrum. Praesent lacinia
@@ -47,7 +46,7 @@ const Food = () => {
   ];
   return (
     <StyledHomeContainer>
-      <Gallery images={images} />
+      <Gallery images={images} title="Food" />
       <FoodText />
     </StyledHomeContainer>
   );

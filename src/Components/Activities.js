@@ -15,7 +15,6 @@ import SpecsRavers from '../assets/activities/specs_ravers.jpg';
 const ActivitiesText = () => {
   return (
     <StyledActivitiesText>
-      <h2>Activities</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Quisque dictum posuere turpis nec rutrum. Praesent lacinia
@@ -73,7 +72,7 @@ const Activities = () => {
   ];
   return (
     <StyledHomeContainer>
-      <Gallery images={images} />
+      <Gallery images={images} title="Activities" />
       <ActivitiesText />
       <ActivityList />
     </StyledHomeContainer>

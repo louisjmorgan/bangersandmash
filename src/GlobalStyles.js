@@ -61,6 +61,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 *, :root {
   --color-text: black;
+  --color-bg: white;
   --color-link-hover: #b00b69;
   --font-secondary:  'Rajdhani', sans-serif;
   --font-primary: 'Roboto', sans-serif;
@@ -74,24 +75,45 @@ button:active {
   transform: scale(0.90);
 }
 
+
+
+.navbar-scroll {
+  background: var(--color-bg);
+  @media only screen and (min-width: 1200px) {
+    background: var(--color-bg);
+    ul {
+      color: var(--color-text);
+      li :not(.selected):hover:after, .selected:after {
+        background-color: var(--color-text);
+      }
+    }
+  }
+  .hamburger {
+    .bar {
+      background-color: var(--color-text);
+    }
+  }
+}
+
+
 a:hover, .navlink:hover {
   cursor: pointer;
 }
 
 body {
-  background-color: white ;
+  background-color: var(--color-bg) ;
 
 }
 
 main {
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 0rem;
   z-index: -2;
 }
 
 @media only screen and (min-width: 1200px) {
   main {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 }
 
