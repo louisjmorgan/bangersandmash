@@ -17,15 +17,39 @@ import ChilloutDonk from '../assets/music/performance.jpg';
 const MusicText = () => {
   return (
     <StyledMusicText>
+      <h3>Stages</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Quisque dictum posuere turpis nec rutrum. Praesent lacinia
-        tortor a lobortis maximus. Integer mauris odio, lacinia nec
-        metus id, finibus luctus ligula. Donec nec lectus et purus
-        rutrum euismod a in dolor. Aenean nec congue nibh, id iaculis
-        mi. Quisque augue nulla, sodales ut egestas at, congue eu
-        risus. Sed eu fermentum lacus. Phasellus porttitor augue nec
-        nisi finibus vehicula.
+        We have 10/10 custom built audiophile quality sound systems
+        that’ll make Funktion-One seem like your nan&apos;s vacuum
+        cleaner. A chill-out space with 24/7 comfy beats and ambient
+        wabs is also on offer for those who need a break from the
+        chaos.
+      </p>
+      <h3>Prepare your ears</h3>
+      <p>
+        Our music tastes are pretty diverse from the most melodious of
+        house and the crunchiest of industrial techno to the hardest,
+        silliest bangers you’ve ever heard. Basically fun,
+        lip-smacking dance music to party to. Staying up past your
+        bedtime is thoroughly encouraged.
+      </p>
+      <h3>Get involved!</h3>
+      <p>
+        The music you bring is the music that gets played so load up
+        those USBs. We’re never short of talented DJs filling the
+        dancefloor and welcome everyone from the seasoned professional
+        to those who have never DJ’d before and want to give it a go!
+        We encourage everyone who’s got some music they want to share
+        to jump on the decks - there will be plenty of people on hand
+        to help out if you’re inexperienced. This year as a new
+        addition we’ll be opening up a Jam Space, so bring your best
+        instruments and voice-boxes. We can do a little concert!
+      </p>
+      <p>
+        Organisation is loose, once we’ve kicked off we put a board
+        for you to sign up with your name, type of music you’ll be
+        playin, and whether you’d like any technical help. We pull
+        together a cohesive, fluid lineup when we’re on site.
       </p>
       <h3>Here&apos;s a taste from previous years...</h3>
     </StyledMusicText>

@@ -24,7 +24,6 @@ const StyledGallery = styled.section`
   }
   .gradient-overlay {
     position: relative;
-
     &::after {
       content: '';
       position: absolute;
@@ -49,12 +48,14 @@ const StyledGallery = styled.section`
       width: 100%;
       margin: 0 auto;
       height: 40vh;
+      min-height: 30rem;
       object-fit: cover;
       object-position: 0 20%;
       color: transparent;
 
       @media only screen and (min-width: 800px) {
         height: 50vh;
+        min-height: 40rem;
       }
       @media only screen and (min-width: 1200px) {
         height: 100vh;

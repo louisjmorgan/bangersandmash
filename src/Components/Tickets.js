@@ -29,10 +29,23 @@ const TicketForm = () => {
 const TicketText = () => {
   return (
     <StyledTicketText>
-      <h2>Tickets</h2>
+      <h3>Pricing</h3>
       <p>
-        Please sign up to join us this summer by completing the form
-        below. We look forward to seeing you!
+        We offer means-based tiered pricing:
+        <ul>
+          <li>£120 Normal tickets</li>
+          <li>£80 Low income/Students tickets </li>
+        </ul>
+        We hope not to exclude anyone for financial reasons, so if you
+        really can&apos;t afford either price get in touch. The price
+        includes food each day at the shindig. We don&apos;t ever make
+        any profit on this and any leftover money goes into making
+        next year even better.
+      </p>
+      <h3>How to sign up</h3>
+      <p>
+        Just fill in the google form below. Payment is via paypal and
+        the payment link is provided when you’ve completed the form:
       </p>
     </StyledTicketText>
   );

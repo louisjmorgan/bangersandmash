@@ -21,16 +21,25 @@ import CosyFire from '../assets/home/cosy_fire_pit.jpg';
 const LandingText = () => {
   return (
     <StyledLandingText>
-      <h2>Welcome to Bangers and Mash Festival 2022!</h2>
+      <h2>We’re Back! 😏</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Quisque dictum posuere turpis nec rutrum. Praesent lacinia
-        tortor a lobortis maximus. Integer mauris odio, lacinia nec
-        metus id, finibus luctus ligula. Donec nec lectus et purus
-        rutrum euismod a in dolor. Aenean nec congue nibh, id iaculis
-        mi. Quisque augue nulla, sodales ut egestas at, congue eu
-        risus. Sed eu fermentum lacus. Phasellus porttitor augue nec
-        nisi finibus vehicula.
+        After a very successful 2021 event, we are returning to
+        Candleston for Bangers & Mashtival 2022 this June!
+      </p>
+      <h3>What is Bangers & Mashtival? </h3>
+      <p>
+        A DIY micro-festival dedicated to celebrating all of your
+        quirks, peculiarities and out-of-the-box qualities - and
+        provide the support for YOU to dream big, spin stories, make
+        things happen, and party with a sound group of individuals.
+      </p>
+      <p>
+        We provide the space, materials, and gizmos needed for art and
+        music, as well as plenty of activities, games, crafts & toys
+        for you to get silly with. The Bangers “DIY Ethos” has always
+        been about participation, and we encourage you to get
+        involved, get dancing, get crafty, play music, create
+        something bizarre, and frolic freely!.
       </p>
       <h2>Explore our...</h2>
     </StyledLandingText>
@@ -89,7 +98,7 @@ const Home = () => {
   return (
     <main>
       <StyledHomeContainer>
-        <Gallery images={images} title="Bangers & Mash Festival" />
+        <Gallery images={images} title="Bangers & Mashtival" />
         <LandingText />
         <HomeLinks />
       </StyledHomeContainer>

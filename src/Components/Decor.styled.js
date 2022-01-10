@@ -23,7 +23,9 @@ const StyledDecorText = styled.section`
     width: 80%;
     margin: 0 auto;
     font-size 1.5rem;
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    margin-bottom: 1.5em;
+    line-height: 1.5;
   }
 `;
 

@@ -11,15 +11,21 @@ import VeganDelights from '../assets/food/vegan_delights.jpg';
 const FoodText = () => {
   return (
     <StyledFoodText>
+      <h3>Hungry?</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Quisque dictum posuere turpis nec rutrum. Praesent lacinia
-        tortor a lobortis maximus. Integer mauris odio, lacinia nec
-        metus id, finibus luctus ligula. Donec nec lectus et purus
-        rutrum euismod a in dolor. Aenean nec congue nibh, id iaculis
-        mi. Quisque augue nulla, sodales ut egestas at, congue eu
-        risus. Sed eu fermentum lacus. Phasellus porttitor augue nec
-        nisi finibus vehicula.
+        Fresh tasty grub is provided as part of the package in a
+        communal (veggie) meal each evening that’ll set you up nicely
+        for the night&apos;s antics. We will cater to all dietary
+        requirements - let us know what your needs are and we’ll sort
+        it. We encourage you to bring your own food supplies for the
+        rest of the day.
+      </p>
+      <p>
+        If you’d like to cook breakfast or lunch for the troops one
+        day please get in touch you will receive all the praise and
+        admiration. The site has a wood burning pizza oven if anyone
+        is handy with dough. And get ready for the techno pancakes
+        dancefloor breakfast madness on Saturday morning!
       </p>
     </StyledFoodText>
   );
@@ -32,12 +38,12 @@ const Food = () => {
       alt: 'vegan delights',
     },
     {
-      url: ChefParty,
-      alt: 'chef party',
-    },
-    {
       url: PreppingFood,
       alt: 'prepping food',
+    },
+    {
+      url: ChefParty,
+      alt: 'chef party',
     },
     {
       url: EatingDinner,

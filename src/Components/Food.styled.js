@@ -14,7 +14,7 @@ const StyledFoodText = styled.section`
   h3 {
     text-align: center;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 3rem 0;
     font-family: var(--font-secondary)
   }
@@ -23,7 +23,9 @@ const StyledFoodText = styled.section`
     width: 80%;
     margin: 0 auto;
     font-size 1.5rem;
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    margin-bottom: 1.5em;
+    line-height: 1.5;
   }
 `;
 

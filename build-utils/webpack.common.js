@@ -28,7 +28,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Bangers and Mash Festival',
+      title: 'Bangers and Mashtival',
       template: path.resolve(__dirname, '..', './src/index.html'),
     }),
     new HtmlWebpackPlugin({

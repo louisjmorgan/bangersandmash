@@ -22,9 +22,17 @@ const StyledTicketText = styled.div`
     p {
         width: 80%;
         margin: 0 auto;
-        font-size 2rem;
-        text-align: center;
-        font-family: var(--font-primary)
+        font-size 1.5rem;
+        font-family: var(--font-primary);
+        margin-bottom: 1.5em;
+        line-height: 1.5;
+      }
+    ul {
+        margin: 1.5em 0;
+        line-height: 1.5;
+        list-style-type: disc;
+        padding-left: 3em;
+        font-weight: bold;
     }
 `;
 
