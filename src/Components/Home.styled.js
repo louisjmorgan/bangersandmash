@@ -56,14 +56,20 @@ const StyledHomeLinks = styled.section`
 
 const StyledLinkBox = styled.button`
   border: solid 2px white;
+  border-radius: 1rem;
   font-size: 2rem;
   padding: 1.5rem;
-  margin-right: 1rem;
+
+  margin-right: 1.5rem;
   margin-bottom: 1rem;
   outline: none;
   background-color: rgba(0, 0, 0, 0.5);
   a {
     color: white;
+    text-decoration: none;
+  }
+  :hover {
+    transform: scale(1.1);
   }
 `;
 

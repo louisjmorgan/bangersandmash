@@ -131,14 +131,11 @@ main {
 
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 62.5%;
+    font-size: 70%;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  html {
-    font-size: 50%
-  }
-}`;
+
+`;
 
 export default GlobalStyles;

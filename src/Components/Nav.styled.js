@@ -108,7 +108,7 @@ const StyledNavLinks = styled.ul`
     display: block;
     height: 0.25rem;
     width: 0px;
-    transition: 0.3s;
+    transition: all 0.4s ease-out 0.1s;
   }
 
   li :not(.selected):hover:after,
@@ -221,7 +221,7 @@ const StyledHamburger = styled.button`
     width: 2em;
     height: 0.25em;
     margin: 0.5em auto;
-    transition: all 0.4s ease-out 0.1s;
+    transition: all 0.2s ease-in-out;
     background-color: var(--color-bg);
   }
 

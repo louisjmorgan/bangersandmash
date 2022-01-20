@@ -46,6 +46,7 @@ const StyledActivityList = styled.section`
     li {
       font-family: var(--font-primary);
       border: solid 2px white;
+      border-radius: 1rem;
       color: white;
       font-size: 2rem;
       padding: 1.5rem;
@@ -53,6 +54,7 @@ const StyledActivityList = styled.section`
       margin-bottom: 1rem;
       outline: none;
       background-color: rgba(0, 0, 0, 0.4);
+      text-decoration: none;
     }
   }
 `;

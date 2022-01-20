@@ -15,7 +15,7 @@ const TicketForm = () => {
         title="Bangers and Mash Signup Form"
         src="https://docs.google.com/forms/d/e/1FAIpQLSehV7Fu4ASXkPgJAyTmTMbWdQbke11DGpzaULxWcHAFboYpHw/viewform?embedded=true"
         width="100%"
-        height="520"
+        height="2750"
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"

@@ -21,7 +21,7 @@ import CosyFire from '../assets/home/cosy_fire_pit.jpg';
 const LandingText = () => {
   return (
     <StyledLandingText>
-      <h2>We’re Back! 😏</h2>
+      <h2>15-22 June 2022</h2>
       <p>
         After a very successful 2021 event, we are returning to
         Candleston for Bangers & Mashtival 2022 this June!
