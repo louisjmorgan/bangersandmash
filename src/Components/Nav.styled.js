@@ -177,7 +177,7 @@ const StyledMobileNav = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
+  height: 6rem;
   overflow: hidden;
   z-index: 99999;
 

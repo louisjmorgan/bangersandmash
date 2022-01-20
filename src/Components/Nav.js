@@ -182,7 +182,7 @@ const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 77) {
+    if (window.scrollY >= 1) {
       setScrolled(true);
     } else {
       setScrolled(false);

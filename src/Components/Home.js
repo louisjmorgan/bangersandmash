@@ -21,7 +21,7 @@ import CosyFire from '../assets/home/cosy_fire_pit.jpg';
 const LandingText = () => {
   return (
     <StyledLandingText>
-      <h2>15-22 June 2022</h2>
+      <h3>15-22 June 2022</h3>
       <p>
         After a very successful 2021 event, we are returning to
         Candleston for Bangers & Mashtival 2022 this June!
@@ -41,7 +41,7 @@ const LandingText = () => {
         involved, get dancing, get crafty, play music, create
         something bizarre, and frolic freely!.
       </p>
-      <h2>Explore our...</h2>
+      <h3>Explore our...</h3>
     </StyledLandingText>
   );
 };
