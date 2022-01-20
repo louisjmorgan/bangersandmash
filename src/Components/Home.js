@@ -39,7 +39,7 @@ const LandingText = () => {
         for you to get silly with. The Bangers “DIY Ethos” has always
         been about participation, and we encourage you to get
         involved, get dancing, get crafty, play music, create
-        something bizarre, and frolic freely!.
+        something bizarre, and frolic freely!
       </p>
       <h3>Explore our...</h3>
     </StyledLandingText>
