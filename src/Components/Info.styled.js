@@ -9,26 +9,30 @@ const StyledInfoText = styled.section`
     font-weight: 700;
     font-size: 6rem;
     margin: 3rem 0;
-    font-family: var(--font-secondary)
+    font-family: var(--font-secondary);
   }
   h3 {
     text-align: center;
     font-weight: 700;
     font-size: 3rem;
     margin: 3rem 0;
-    font-family: var(--font-secondary)
+    font-family: var(--font-secondary);
   }
 
   p {
     width: 80%;
     margin: 0 auto;
-    font-size 1.5rem;
+    font-size: 1.5rem;
     font-family: var(--font-primary);
     margin-bottom: 1.5em;
     line-height: 1.5;
     b {
       font-weight: bold;
     }
+  }
+
+  .contact-us {
+    text-align: center;
   }
 `;
 

@@ -124,7 +124,6 @@ const StyledNavLinks = styled.ul`
     @media only screen and (min-width: 1200px) {
       background-color: var(--color-bg);
     }
-    
   }
 
   a {
@@ -133,11 +132,11 @@ const StyledNavLinks = styled.ul`
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: 400;
+    text-transform: lowercase;
     @media only screen and (min-width: 1200px) {
       color: inherit;
       font-size: 1.5rem;
     }
-  }
   }
 `;
 
@@ -222,7 +221,7 @@ const StyledHamburger = styled.button`
     width: 2em;
     height: 0.25em;
     margin: 0.5em auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-out 0.1s;
     background-color: var(--color-bg);
   }
 

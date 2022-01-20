@@ -120,6 +120,40 @@ const FoodText = () => {
         usually quite fun too with lots of friendly faces still
         majorly buzzing from the fun we’ve had.
       </p>
+      <div className="contact-us">
+        <h3>Contact us</h3>
+        <p>Feel free to contact us on Facebook:</p>
+        <p>
+          <b>General - </b>
+          <a href="https://www.facebook.com/louischaman/">Louis</a>
+        </p>
+        <p>
+          <b>Tickets - </b>
+          <a href="https://www.facebook.com/michmichmichmichmichmich">
+            Michelle
+          </a>
+        </p>
+        <p>
+          <b>Activities - </b>
+          <a href="https://www.facebook.com/intergalacticspacekitten">
+            Davine
+          </a>
+        </p>
+        <p>
+          <b>DJ Music - </b>
+          <a href="https://www.facebook.com/andrew.bard.77">Andrew</a>
+        </p>
+        <p>
+          <b>Live Music - </b>
+          <a href="https://www.facebook.com/maddie.purefoy">Maddie</a>
+        </p>
+        <p>
+          <b>Food - </b>
+          <a href="https://www.facebook.com/bartek.dziamski.7">
+            Bartek
+          </a>
+        </p>
+      </div>
     </StyledInfoText>
   );
 };

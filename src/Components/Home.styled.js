@@ -16,7 +16,7 @@ const StyledLandingText = styled.section`
     font-weight: 700;
     font-size: 4rem;
     margin: 3rem 0;
-    font-family: var(--font-secondary)
+    font-family: var(--font-secondary);
   }
 
   h3 {
@@ -24,13 +24,13 @@ const StyledLandingText = styled.section`
     font-weight: 700;
     font-size: 3rem;
     margin: 3rem 0;
-    font-family: var(--font-secondary)
+    font-family: var(--font-secondary);
   }
 
   p {
     width: 80%;
     margin: 0 auto;
-    font-size 1.5rem;
+    font-size: 1.5rem;
     font-family: var(--font-primary);
     line-height: 1.5;
     margin-bottom: 1.5em;
@@ -43,6 +43,7 @@ const StyledHomeLinks = styled.section`
   background-image: url(${NightTime});
   background-size: cover;
   background-position: center;
+  padding: 10rem 0;
   .links-container {
     margin: 0 auto;
     display: flex;

@@ -15,16 +15,7 @@ import SpecsRavers from '../assets/activities/specs_ravers.jpg';
 const ActivitiesText = () => {
   return (
     <StyledActivitiesText>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Quisque dictum posuere turpis nec rutrum. Praesent lacinia
-        tortor a lobortis maximus. Integer mauris odio, lacinia nec
-        metus id, finibus luctus ligula. Donec nec lectus et purus
-        rutrum euismod a in dolor. Aenean nec congue nibh, id iaculis
-        mi. Quisque augue nulla, sodales ut egestas at, congue eu
-        risus. Sed eu fermentum lacus. Phasellus porttitor augue nec
-        nisi finibus vehicula.
-      </p>
+      <p />
       <h3>Expect the following and more...</h3>
     </StyledActivitiesText>
   );

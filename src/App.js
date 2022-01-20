@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
@@ -6,6 +7,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  withRouter,
 } from 'react-router-dom';
 import Home from './Components/Home';
 import Music from './Components/Music';
@@ -21,7 +23,8 @@ import ScrollToTop from './ScrollToTop';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const App = () => {
+const App = ({ location }) => {
+  console.log(location);
   return (
     <>
       <GlobalStyles />
@@ -51,7 +54,11 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-        <Footer />
+        <Switch>
+          <Route path="/(|activities|decor-installations|food|music|info)">
+            <Footer />
+          </Route>
+        </Switch>
       </Router>
     </>
   );

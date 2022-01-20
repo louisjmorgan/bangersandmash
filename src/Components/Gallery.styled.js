@@ -16,7 +16,8 @@ const StyledGallery = styled.section`
     color: white;
     z-index: 9999;
     font-size: 5rem;
-    font-family: serif;
+    font-family: var(--font-primary);
+    text-transform: lowercase;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.8);
     @media only screen and (min-width: 1200px) {
       font-size: 10rem;
