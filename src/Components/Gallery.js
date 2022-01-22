@@ -12,6 +12,7 @@ const SimpleSlider = ({ images, title }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    lazyLoad: true,
   };
   const galleryContent = images.map((image) => {
     return (

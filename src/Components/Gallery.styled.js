@@ -15,10 +15,13 @@ const StyledGallery = styled.section`
     text-align: center;
     color: white;
     z-index: 9999;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: var(--font-primary);
     text-transform: lowercase;
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.8);
+    @media only screen and (min-width: 1000px) {
+      font-size: 8rem;
+    }
     @media only screen and (min-width: 1200px) {
       font-size: 10rem;
     }

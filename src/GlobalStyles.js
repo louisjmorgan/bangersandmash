@@ -79,6 +79,7 @@ button:active {
 
 .navbar-scroll {
   background: var(--color-bg);
+  transition: 0.3s ease-in-out;
   @media only screen and (min-width: 1200px) {
     background: var(--color-bg);
     ul {

@@ -1,32 +1,9 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 import Mindfullness from '../assets/activities/mindfullness.jpg';
+import { StyledLandingText } from './Home.styled';
 
-const StyledActivitiesText = styled.section`
-  margin: 3rem auto;
-  width: 80%;
-  h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 6rem;
-    margin: 3rem 0;
-    font-family: var(--font-secondary);
-  }
-  h3 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin: 3rem 0;
-    font-family: var(--font-secondary);
-  }
-
-  p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    font-family: var(--font-primary);
-  }
-`;
+const StyledActivitiesText = styled(StyledLandingText)``;
 
 const StyledActivityList = styled.section`
   margin: 0 auto;
@@ -41,7 +18,10 @@ const StyledActivityList = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     padding: 5rem;
-    width: 80%;
+    max-width: 80%;
+    @media only screen and (min-width: 1000px) {
+      max-width: 60%;
+    }
 
     li {
       font-family: var(--font-primary);
