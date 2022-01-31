@@ -2,6 +2,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.js'),
@@ -38,6 +39,9 @@ module.exports = {
     new FaviconsWebpackPlugin(
       '/home/louis/Dev/BangersAndMash/favicon.png'
     ),
+    new CnameWebpackPlugin({
+      domain: 'www.bangersandmash.fun',
+    }),
   ],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),

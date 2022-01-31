@@ -5,8 +5,23 @@ import { StyledLandingText } from './Home.styled';
 const StyledMusicText = styled(StyledLandingText)``;
 
 const StyledSoundCloudPreview = styled.div`
-  width: 80%;
   margin: 0 auto;
 `;
 
-export { StyledMusicText, StyledSoundCloudPreview };
+const StyledArtistCard = styled(StyledLandingText)`
+  h4 {
+    margin: 8rem auto 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--font-secondary);
+  }
+
+  p {
+    font-size: 1.5rem;
+
+    margin-bottom: 3rem;
+  }
+`;
+
+export { StyledMusicText, StyledSoundCloudPreview, StyledArtistCard };

@@ -7,6 +7,7 @@ import { StyledHomeContainer } from './Home.styled';
 import {
   StyledMusicText,
   StyledSoundCloudPreview,
+  StyledArtistCard,
 } from './Music.styled';
 import OutdoorParty from '../assets/music/colourful_party_vibes.jpg';
 import DJUmbrella from '../assets/music/dj_with_audio_gear.jpg';
@@ -51,7 +52,7 @@ const MusicText = () => {
         playin, and whether you’d like any technical help. We pull
         together a cohesive, fluid lineup when we’re on site.
       </p>
-      <h3>Here&apos;s a taste from previous years...</h3>
+      <h3>Artists</h3>
     </StyledMusicText>
   );
 };
@@ -63,7 +64,30 @@ const SoundcloudPreview = () => {
     </StyledSoundCloudPreview>
   );
 };
-const Music = () => {
+
+const ArtistCard = ({ name, description, link }) => {
+  return (
+    <StyledArtistCard>
+      <h4>{name}</h4>
+      <p>{description}</p>
+      <StyledSoundCloudPreview>
+        <ReactSoundCloud url={link} height="350px" />
+      </StyledSoundCloudPreview>
+    </StyledArtistCard>
+  );
+};
+
+const Artists = ({ data }) => {
+  const artists = Object.entries(data).map((artist) => (
+    <ArtistCard
+      name={artist[1].name}
+      description={artist[1].description}
+      link={artist[1].link}
+    />
+  ));
+  return <section>{artists}</section>;
+};
+const Music = ({ data }) => {
   const images = [
     {
       url: OutdoorParty,
@@ -86,11 +110,12 @@ const Music = () => {
       alt: 'two DJs having it',
     },
   ];
+
   return (
     <StyledHomeContainer>
       <Gallery images={images} title="Music" />
       <MusicText />
-      <SoundcloudPreview />
+      <Artists data={data} />
     </StyledHomeContainer>
   );
 };

@@ -24,7 +24,29 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const App = ({ location }) => {
-  console.log(location);
+  const [siteData, setData] = useState([]);
+  const [isLoaded, setLoaded] = useState(false);
+
+  const fetchData = async () => {
+    fetch(
+      'https://bangersandmash-92a0b-default-rtdb.europe-west1.firebasedatabase.app/.json'
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data['1rKQZz9Qv1LGbiAuy75XebmBSWOqpW45Vwxu9kR361jk']);
+        setLoaded(true);
+      });
+    // .catch((err) => {
+    //   setData(
+    //     backupData['1rKQZz9Qv1LGbiAuy75XebmBSWOqpW45Vwxu9kR361jk8']
+    //   );
+    //   setLoaded(true);
+    // });
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <GlobalStyles />
@@ -33,7 +55,7 @@ const App = ({ location }) => {
         <ScrollToTop />
         <Switch>
           <Route path="/music">
-            <Music />
+            {isLoaded ? <Music data={siteData.Artists} /> : ''}
           </Route>
           <Route path="/activities">
             <Activities />
