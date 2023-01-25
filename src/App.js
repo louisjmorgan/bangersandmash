@@ -66,9 +66,9 @@ const App = ({ location }) => {
           <Route path="/food">
             <Food />
           </Route>
-          <Route path="/tickets">
+          {/* <Route path="/tickets">
             <Tickets />
-          </Route>
+          </Route> */}
           <Route path="/info">
             <Info />
           </Route>
@@ -76,11 +76,11 @@ const App = ({ location }) => {
             <Home />
           </Route>
         </Switch>
-        <Switch>
+        {/* <Switch>
           <Route path="/(|activities|decor-installations|food|music|info)">
             <Footer />
           </Route>
-        </Switch>
+        </Switch> */}
       </Router>
     </>
   );

@@ -99,15 +99,14 @@ const NavLinksContainer = ({ closeMenu }) => {
           Food
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/tickets"
-          activeClassName="selected"
           onClick={closeMenu}
         >
           Tickets
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink
           to="/info"

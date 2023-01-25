@@ -31,14 +31,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Bangers and Mashtival',
       template: path.resolve(__dirname, '..', './src/index.html'),
+      favicon: './favicon.png',
     }),
     new HtmlWebpackPlugin({
       filename: '404.html',
       template: path.resolve(__dirname, '..', './src/404.html'),
     }),
-    new FaviconsWebpackPlugin(
-      '/home/louis/Dev/BangersAndMash/favicon.png'
-    ),
     new CnameWebpackPlugin({
       domain: 'www.bangersandmash.fun',
     }),
